@@ -59,11 +59,11 @@ header{
     height: 30px;
     padding: 3px;
 }
+
 .container {
     display: grid;
     grid-template-columns: 300px auto;
     background-color: #ecf0f1;
-    
 
 }
 
@@ -80,6 +80,7 @@ header{
 #perfil{
         margin-top: 5px;
         height: 250px;
+        border-radius: 70%;
         border: 0;
 }
 
@@ -95,9 +96,8 @@ header{
     border: 1px solid rgb(51, 50, 50);
     text-align: center;
 }
-
-#meusPosts{
-background-color: slategray;
+#alterarDados{
+    background-color: slategray;
 }
 
 #logout{
@@ -112,24 +112,21 @@ background-color: slategray;
 .content {
     grid-column: 2/3;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     height: calc(100vh - 46px);;
     overflow:auto;
 }
 
-.post {
-    min-width: 300px;
-    height: 400px;
-    flex-basis: 1 ;
-    margin: 10px;
-    border: 1px solid rgb(71, 70, 70);
+.dados{
+    min-width: 200px;
+    height: 80px;
 }
 
 html, body, .container {
     min-height: 100vh;
-    
 }
 
   
