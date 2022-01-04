@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px 0px 0px 0px;
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+    
+    
+    }
+
+header{
+    text-align: center;
+    font-family: 'Moon Dance', cursive;
+    background-color: #a2aeaf;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    
+
+     
+}
+
+#busca{
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+#logo{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    min-width: 40px;
+    height: 40px;
+    font-weight: bold;
+    flex: 1;
+    position: relative;
+    left: -30px;
+    
+}
+#perfilCabecalho{
+    border: 1px solid silver;
+    min-width: 38px;
+    height: 38px;
+    margin: 2px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    
+    background-color: #ecf0f1;
+    
+  }
+  
+  .sidebar {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: flex-start;
+  }
+
+  #perfil{
+      margin-top: 5px;
+  }
+
+  .menu{
+    min-width: 298px;
+    height: 50px;    
+    border: 1px solid silver;
+  }
+
+  #logout{
+      
+  }
+  
+  .content {
+    grid-column: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1em;
+  }
+  .post {
+    min-width: 300px;
+    height: 400px;
+    flex-basis: 1 ;
+    margin: 10px;
+    
+    border: 1px solid silver;
+  }
+  
+
+  
+  
+  html, body, .container {
+    min-height: 100vh;
+  }
+  
+  
