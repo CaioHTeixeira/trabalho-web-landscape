@@ -6,6 +6,7 @@ body {
     margin-right: 0;
     height: 100%;
     overflow: hidden;
+    
 }
 
 header{
@@ -42,7 +43,7 @@ header{
     font-weight: bold;
     flex: 1;
     position: relative;
-    left: -30px;
+    left: -95px;
 
 }
 
@@ -62,34 +63,54 @@ header{
 
 .container {
     display: grid;
-    grid-template-columns: 260px auto;
+    grid-template-columns: 265px auto;
     background-color: #ecf0f1;
-    overflow-y:auto;
-
+     
 }
+
 .sidebar{
     grid-column: 1/2;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 1.5em;
+    justify-content: flex-start;
+    gap: 7.5em;
     background-color: #a2aeaf;
-    
-    
+    border-right: 2px solid black; 
 }
+
 .sidebar > label{
     font-size: 30px;
+    position: relative;
+    right: -85px;
+    margin-top: 20px;
 
 }
 
-.sidebar > section{
-    flex: 1;
+
+.content{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    overflow-y:auto;
+    height: calc(100vh - 49px);
+    
+}
+
+.post {
+    width: 400px;
+    min-height: 450px;
+    margin: 10px;
+    flex-basis: 1 ;
+    border: 1px solid rgb(71, 70, 70);
 }
 
 
 html, body, .container {
     min-height: 100vh;
-    overflow-y:hidden;
+    
 }
 
   

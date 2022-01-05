@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Landscape</title>
+    <link rel="stylesheet" href="css/adicionarPost.css">
+    <link rel="icon" href="imagens/pincel.png">
+</head>
+<body>
+    <header>
+        <div id="busca">
+            <label>
+                Buscar: <input type="text" id="textoBusca"> <img src="imagens/lupaIcon.png" id="lupa" alt="Lupa que indica um botao de pesquisar" >
+              </label>
+        </div>
+        <h1 id="logo">LandScape</h1>
+        <section id="perfilCabecalho"><img src="imagens/profileIcon.jpeg"  id="miniPerfil" alt="imagem de perfil padrão"></section>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <section id="perfil" class="menu"><img src="imagens/profileIcon.jpeg" id="imgPerfil" alt="imagem de perfil padrão"></section>
+            <nav id="meusPosts" class="menu"><p>Minhas Publicações</p></nav>
+            <nav id="addPost" class="menu"> <p>Adicionar post</p></nav>
+            <nav class="menu"><p>Histórico de transações</p></nav>
+            <nav id="alterarDados" class="menu"><p>alterar dados</p></nav>
+            <footer id="logout" class="menu">Desconectar</footer>
+
+        </div>
+        <div class="content">     
+            <label id="url" class="filtros">Selecionar Imagem:<input  type="file" id="pesquisar"></input></label>          
+            <section class="filtros">
+                <label>Nome da Obra:<input type="text" id="nome"></label>
+            </section>
+            <section class="filtros">
+                <label  for="estilos">Estilos de arte:</label>
+                    <select id="Estilos">
+                    <option value=""selected></option>
+                    <option value="renacentista">Renacentista</option>
+                    <option value="barroca" >Barroca</option>
+                    <option value="medieval" >Medieval</option>
+                    <option value="rupestre" >Rupestre</option>
+                    <option value="moderna" >Arte moderna</option>
+                    <option value="contemporanea" >Arte Contemporânea</option>
+                    </select>
+                </section>
+                <section class="filtros">
+                <label  for="tipo">Tipo de arte:</label>
+                    <select id="Tipo">
+                    <option value=""selected></option>
+                    <option value="pintura">Pintura</option>
+                    <option value="desenho" >Desenho</option>
+                    <option value="fotografia" >Fotografia</option>
+                    <option value="photoshop" >PhotoShop</option>
+                    <option value="escultura" >Escultura</option>
+                    </select>
+                </section>
+                <section class="filtros">
+                    <label >Preço:<input type="text" value="R$00,00" id="preco"></label>
+                </section>
+                <img src="imagens/oGrito.jpg" class="filtros" id="imgAdicionada">
+                <button class="filtros" id="salvar">Publicar</button>
+                 
+    </div>
+    </div>
+</body>

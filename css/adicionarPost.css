@@ -96,7 +96,7 @@ header{
     border: 1px solid rgb(51, 50, 50);
     text-align: center;
 }
-#alterarDados{
+#addPost{
     background-color: slategray;
 }
 
@@ -111,23 +111,20 @@ header{
 
 .content {
     grid-column: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     height: calc(100vh - 46px);;
     overflow:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 20px;
 }
 
-.dados{
-    min-width: 200px;
-    height: 80px;
-}
 
-#url{
-    position: relative;
-    right: -60px;
+#imgAdicionada{
+    width: 300px;
+    height: 300px;
 }
 
 
