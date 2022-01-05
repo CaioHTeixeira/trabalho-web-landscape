@@ -70,11 +70,118 @@ header{
 }
 
 .post {
-    width: 360px;
-    height: 511px;
-    align-items: baseline;
-    margin: 10px;
-    border: 1px solid rgb(71, 70, 70);
+  width: 400px;
+  min-height: 450px;
+  margin: 10px;
+  flex-basis: 1 ;
+  border: 1px solid rgb(71, 70, 70);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgb(128, 165, 162);
+  border-radius: 5%;
+  position: relative;
+  top: -30px;
+}
+
+#postCabecalho{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  border-bottom: 2px solid black;
+}
+
+.perfil > img{
+  width: 30px;
+  height: 30px;
+  border: 1px solid yellow;
+  border-radius: 100%;
+}
+
+.perfil > label{
+  font-weight: bold;
+  position: relative;
+  top: -8px;
+  margin-left: 5px;
+
+}
+
+.pagamento > img{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 3px;
+}
+
+.pagamento > input{
+  width: 110px;
+  border-radius: 4%;
+  background-color: gray;
+  font-weight: bold;
+  position: relative;
+  top: -6px;
+}
+
+#imgPost{
+  width: 400px;
+  height: 280px;
+  border-bottom: 2px solid black;
+}
+
+#comentar{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 1px solid gray;
+}
+
+.sctnComentario{
+  position: relative;
+  left: 20px;
+  /*visibility: hidden;*/
+
+}
+
+#addComentario{
+  width: 230px;
+}
+
+#comentar > #imgComentario{
+  width: 20px;
+  height: 20px;
+}
+
+#comentar > #imgCurtida{
+  width: 35px;
+  height: 35px;
+}
+
+#comentarios{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3px;
+  height: 84px;
+  overflow-y: auto;
+  font-size: 10px;
+}
+
+#comentarios > article{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  padding: 1px;
+  border-top: 1px solid grey;
+}
+
+.perfilComentarios{
+  width: 28px;
+  height: 28px;
+  border: 1px solid yellow;
+  border-radius: 100%;
 }
 
 html, body, .container {
@@ -87,6 +194,11 @@ html, body, .container {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper{
+  position: relative;
+  top: -25px;
 }
 
 body{
