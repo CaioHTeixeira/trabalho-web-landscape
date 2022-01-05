@@ -2,10 +2,65 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Landscape</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="imagens/pincel.png">
 </head>
 <body>
-    oi
+    <header>
+        <div id="busca">
+            <label>
+                Buscar: <input type="text" id="textoBusca"> <img src="imagens/lupaIcon.png" id="lupa" alt="Lupa que indica um botao de pesquisar" >
+              </label>
+        </div>
+        <h1 id="logo">LandScape</h1>
+        <section id="perfilCabecalho"><img src="imagens/profileIcon.jpeg"  id="miniPerfil" alt="imagem de perfil padrão"></section>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+
+            <label class="filtros">Filtros</label>
+            <section>
+            <label class="filtros" for="estilos">Estilos de arte:</label>
+                <select id="Estilos">
+                <option value=""selected>nenhum</option>
+                <option value="renacentista">Renacentista</option>
+                <option value="barroca" >Barroca</option>
+                <option value="medieval" >Medieval</option>
+                <option value="rupestre" >Rupestre</option>
+                <option value="moderna" >Arte moderna</option>
+                <option value="contemporanea" >Arte Contemporânea</option>
+                </select>
+            </section>
+            <section>
+            <label class="filtros" for="preco">Preço:</label>
+                <select id="Precos">
+                <option value=""selected>nenhum</option>
+                <option value="500">Até R$500,00</option>
+                <option value="1000" >Até R$1.000,00</option>
+                <option value="5000" >Até R$5.000,00</option>
+                <option value="20000" >Até R$20.000,00</option>
+                <option value="100000" >Até R$100.000,00</option>
+                <option value="100000+" >R$100.000,00+</option>
+                </select>
+            </section>
+            <section>
+            <label class="filtros" for="tipo">Tipo de arte:</label>
+                <select id="Tipo">
+                <option value=""selected>nenhum</option>
+                <option value="pintura">Pintura</option>
+                <option value="desenho" >Desenho</option>
+                <option value="fotografia" >Fotografia</option>
+                <option value="photoshop" >PhotoShop</option>
+                <option value="escultura" >Escultura</option>
+                </select>
+            </section>
+            
+
+        </div>
+        <div class="content">   
+                                
+        </div>
+    </div>
 </body>
-</html>

@@ -114,9 +114,34 @@ header{
     height: calc(100vh - 46px);;
     overflow:auto;
     grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.compras{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 30px 0px 30px;
+    gap: 2em;
+    border: 3px solid black;
+  
+}
+
+.compras > img{
+    width: 200px;
+    height: 200px;
+    border-right: 3px solid black;
 
 
 }
+.compras > spam{
+    font-size: 30px;
+    font-weight: bold;
+}
+
 
 html, body, .container {
     min-height: 100vh;
