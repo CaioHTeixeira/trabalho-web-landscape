@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px 0px 0px 0px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+header{
+    text-align: center;
+    font-family: 'Moon Dance', cursive;
+    background-color: #a2aeaf;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    border-bottom: 2px solid black;     
+}
+
+#busca{
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+#lupa{
+    min-width: 25px;
+    height: 25px;
+    padding: 3px;
+    position: relative;
+    top: 7px;
+    left: -5px;
+}
+
+#logo{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    min-width: 40px;
+    height: 40px;
+    font-weight: bold;
+    flex: 1;
+    position: relative;
+    left: -30px;
+
+}
+
+#perfilCabecalho{
+    border: 1px solid rgb(41, 40, 40);
+    min-width: 38px;
+    height: 38px;
+    margin: 2px;
+    border-radius: 50%;
+}
+
+#miniPerfil{
+    min-width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    background-color: #ecf0f1;
+}
+
+.content {
+    
+}
+
+.post {
+    min-width: 300px;
+    height: 400px;
+    flex-basis: 1 ;
+    margin: 10px;
+    border: 1px solid rgb(71, 70, 70);
+}
+
+html, body, .container {
+    min-height: 100vh;
+}
+
+  
