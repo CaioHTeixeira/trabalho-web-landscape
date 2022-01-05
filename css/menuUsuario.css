@@ -115,7 +115,7 @@ background-color: slategray;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 1em;
-    height: calc(100vh - 46px);;
+    height: calc(100vh - 46px);
     overflow:auto;
 }
 
