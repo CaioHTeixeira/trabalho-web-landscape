@@ -1,5 +1,5 @@
 const btnLogin = document.querySelector("#signin");
-//const btnLogar = document.querySelector("#btnLogar");
+const btnLogar = document.querySelector("#btnLogar");
 const btnCadastrar = document.querySelector("#signup");
 const body = document.querySelector("body");
 
