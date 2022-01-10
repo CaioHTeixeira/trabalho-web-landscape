@@ -4,17 +4,17 @@ const lupa = document.querySelector('#lupa');
 const btnPagamento = document.querySelector('.btn-pagamento');
 
 logo.addEventListener('click', () => {
-    window.location.href = "/home.html"
+    window.location = "./home.html"
 })
 
 menu.addEventListener('click', () => {
-    window.location.href = "/menuUsuario.html"
+    window.location = "./menuUsuario.html"
 })
 
 lupa.addEventListener('click', () => {
-    window.location.href = "/outrosUsuarios.html"
+    window.location = "./outrosUsuarios.html"
 })
 
 btnPagamento.addEventListener('click', () => {
-    window.location.href = "/transacoes.html"
+    window.location = "./transacoes.html"
 })

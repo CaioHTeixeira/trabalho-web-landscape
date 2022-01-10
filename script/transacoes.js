@@ -8,33 +8,33 @@ const alterarDadosMenu = document.querySelector('#alterarDados');
 const btnLogout = document.querySelector('#btnLogout');
 
 logo.addEventListener('click', () => {
-    window.location.href = "/home.html";
+    window.location = "./home.html";
 })
 
 menu.addEventListener('click', () => {
-    window.location.href = "/menuUsuario.html";
+    window.location = "./menuUsuario.html";
 })
 
 lupa.addEventListener('click', () => {
-    window.location.href = "/outrosUsuarios.html"
+    window.location = "./outrosUsuarios.html"
 })
 
 meusPostsMenu.addEventListener('click', () => {
-    window.location.href = "/menuUsuario.html"
+    window.location = "./menuUsuario.html"
 })
 
 adicionarPostMenu.addEventListener('click', () => {
-    window.location.href = "/adicionarPost.html"
+    window.location = "./adicionarPost.html"
 })
 
 historicoTransacoesMenu.addEventListener('click', () => {
-    window.location.href = "/transacoes.html"
+    window.location = "./transacoes.html"
 })
 
 alterarDadosMenu.addEventListener('click', () => {
-    window.location.href = "/alterarDados.html"
+    window.location = "./alterarDados.html"
 })
 
 btnLogout.addEventListener('click', () => {
-    window.location.href = "/login.html"
+    window.location = "./login.html"
 })

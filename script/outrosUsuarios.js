@@ -3,13 +3,13 @@ const menu = document.querySelector('#perfilCabecalho');
 const lupa = document.querySelector('#lupa');
 
 logo.addEventListener('click', () => {
-    window.location.href = "/home.html"
+    window.location = "./home.html"
 })
 
 menu.addEventListener('click', () => {
-    window.location.href = "/menuUsuario.html"
+    window.location = "./menuUsuario.html"
 })
 
 lupa.addEventListener('click', () => {
-    window.location.href = "/outrosUsuarios.html"
+    window.location = "./outrosUsuarios.html"
 })
