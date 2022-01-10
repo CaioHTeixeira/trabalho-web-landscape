@@ -32,6 +32,7 @@ header{
     position: relative;
     top: 7px;
     left: -5px;
+    cursor: pointer;
 }
 
 #logo{
@@ -44,7 +45,7 @@ header{
     flex: 1;
     position: relative;
     left: -95px;
-
+    cursor: pointer;
 }
 
 #perfilCabecalho{
@@ -53,6 +54,7 @@ header{
     height: 38px;
     margin: 2px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #miniPerfil{
