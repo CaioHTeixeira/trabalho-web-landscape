@@ -8,6 +8,10 @@ const alterarDadosMenu = document.querySelector('#alterarDados');
 const btnLogout = document.querySelector('#btnLogout');
 const balaoComentario = document.querySelectorAll('#imgComentario');
 const imgsCurtida = document.querySelectorAll('#imgCurtida');
+const btnsComentar = document.querySelectorAll('#btnComentar');
+const comentarios = document.querySelector('#comentarios');
+const inputs = document.querySelectorAll('#addComentario');
+let userCounter = 90;
 
 logo.addEventListener('click', () => {
     window.location = "./home.html";
@@ -41,10 +45,6 @@ btnLogout.addEventListener('click', () => {
     window.location = "./login.html"
 })
 
-//btnComentar.addEventListener('click', (event) =>{
-//    const texto =event.target.previousSibling.value;
-//})
-
 Array.from(imgsCurtida).forEach(item => {
     item.addEventListener('click', (event) => {
         if (item.getAttribute("src") == "imagens/curtido.png") {
@@ -62,5 +62,36 @@ Array.from(imgsCurtida).forEach(item => {
 Array.from(balaoComentario).forEach(item => {
     item.addEventListener('click', event => {
         event.target.nextElementSibling.classList.toggle("hidden");
+    })
+})
+
+Array.from(btnsComentar).forEach(item => {
+    item.addEventListener('click', event => {
+        const comentariosSection = event.target.parentNode.parentNode.nextElementSibling;
+        const comentario = event.target.previousSibling.value;
+        
+        comentariosSection.innerHTML += `
+        <article>
+            <img class="perfilComentarios" src="imagens/profileIcon.jpeg"> 
+            <label>Usuario${userCounter} : </label> 
+            <label id="comentario">${comentario}</label>
+        </article>`
+        userCounter++;
+    })
+})
+
+Array.from(inputs).forEach(item => {
+    item.addEventListener('keypress', event => {
+        if (event.key == 'Enter') {
+            const comentariosSection = event.target.parentNode.parentNode.nextElementSibling;
+            
+            comentariosSection.innerHTML += `
+            <article>
+                <img class="perfilComentarios" src="imagens/profileIcon.jpeg"> 
+                <label>Usuario${userCounter} : </label> 
+                <label id="comentario">${item.value}</label>
+            </article>`
+            userCounter++;
+        }
     })
 })
