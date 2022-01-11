@@ -91,8 +91,6 @@ header{
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 1em;
-    
-    
 }
 
 .post {
@@ -113,6 +111,14 @@ header{
     align-items: center;
     padding: 3px;
     border-bottom: 2px solid black;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#pagamentoSaco {
+    cursor: pointer;
 }
 
 .perfil > img{
@@ -174,11 +180,13 @@ header{
 #comentar > #imgComentario{
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 #comentar > #imgCurtida{
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 
 #comentarios{
