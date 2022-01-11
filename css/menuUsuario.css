@@ -197,8 +197,10 @@ header{
 .sctnComentario{
     position: relative;
     left: 20px;
-    /*visibility: hidden;*/
+}
 
+.hidden {
+    visibility: hidden;
 }
 
 #addComentario{
@@ -208,11 +210,13 @@ header{
 #comentar > #imgComentario{
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 #comentar > #imgCurtida{
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 
 #comentarios{

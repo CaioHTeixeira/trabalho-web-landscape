@@ -6,6 +6,8 @@ const adicionarPostMenu = document.querySelector('#adicionarPost');
 const historicoTransacoesMenu = document.querySelector('#historicoTransacoes');
 const alterarDadosMenu = document.querySelector('#alterarDados');
 const btnLogout = document.querySelector('#btnLogout');
+const balaoComentario = document.querySelectorAll('#imgComentario');
+const imgsCurtida = document.querySelectorAll('#imgCurtida');
 
 logo.addEventListener('click', () => {
     window.location = "./home.html";
@@ -37,4 +39,20 @@ alterarDadosMenu.addEventListener('click', () => {
 
 btnLogout.addEventListener('click', () => {
     window.location = "./login.html"
+})
+
+Array.from(imgsCurtida).forEach(item => {
+    item.addEventListener('click', () => {
+        if (item.getAttribute("src") == "imagens/curtido.png") {
+            item.setAttribute("src", "imagens/naoCurtido.png");
+        } else {
+            item.setAttribute("src", "imagens/curtido.png")
+        }
+    })
+})
+
+Array.from(balaoComentario).forEach(item => {
+    item.addEventListener('click', event => {
+        event.target.nextElementSibling.classList.toggle("hidden");
+    })
 })
