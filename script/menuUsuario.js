@@ -41,12 +41,20 @@ btnLogout.addEventListener('click', () => {
     window.location = "./login.html"
 })
 
+//btnComentar.addEventListener('click', (event) =>{
+//    const texto =event.target.previousSibling.value;
+//})
+
 Array.from(imgsCurtida).forEach(item => {
-    item.addEventListener('click', () => {
+    item.addEventListener('click', (event) => {
         if (item.getAttribute("src") == "imagens/curtido.png") {
             item.setAttribute("src", "imagens/naoCurtido.png");
+            event.target.classList.toggle("curtido");
+            event.target.classList.toggle("naoCurtido");
         } else {
-            item.setAttribute("src", "imagens/curtido.png")
+            item.setAttribute("src", "imagens/curtido.png");
+            event.target.classList.toggle("curtido");
+            event.target.classList.toggle("naoCurtido");
         }
     })
 })

@@ -109,9 +109,11 @@ header{
 
 #btnLogout {
     margin-left: 5px;
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 1px;
     background-color: lightgrey;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 #meusPosts, #adicionarPost, #historicoTransacoes, #alterarDados {
@@ -214,10 +216,25 @@ header{
 }
 
 #comentar > #imgCurtida{
-    width: 35px;
-    height: 35px;
     cursor: pointer;
 }
+
+#comentar > .curtido{
+    width: 31px;
+    height: 31px; 
+    margin-left: 2px; 
+}
+
+#comentar > .naoCurtido{
+    width: 19px;
+    height: 19px;
+    margin: 9px; 
+}
+
+#btnComentar{
+    cursor: pointer;
+}
+
 
 #comentarios{
     display: flex;

@@ -130,9 +130,7 @@ header{
 
 .perfil > label{
     font-weight: bold;
-    position: relative;
-    top: -8px;
-    margin-left: 5px;
+    position: static;
 
 }
 
@@ -184,8 +182,22 @@ header{
 }
 
 #comentar > #imgCurtida{
-    width: 35px;
-    height: 35px;
+    cursor: pointer;
+}
+
+#comentar > .curtido{
+    width: 31px;
+    height: 31px;  
+    margin-left: 2px; 
+}
+
+#comentar > .naoCurtido{
+    width: 19px;
+    height: 19px;
+    margin: 9px; 
+}
+
+#btnComentar{
     cursor: pointer;
 }
 

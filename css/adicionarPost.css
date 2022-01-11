@@ -111,11 +111,12 @@ header{
 
 #btnLogout {
     margin-left: 5px;
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 1px;
     background-color: lightgrey;
     border: 1px solid black;
+    cursor: pointer;
 }
-
 #meusPosts, #adicionarPost, #historicoTransacoes, #alterarDados {
     cursor: pointer;
 }
@@ -136,6 +137,10 @@ header{
 #imgAdicionada{
     width: 300px;
     height: 300px;
+}
+
+#salvar{
+    cursor: pointer;
 }
 
 
