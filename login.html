@@ -9,6 +9,7 @@
     <link rel="icon" href="imagens/pincel.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 <body>
     <header>
@@ -53,23 +54,31 @@
             </div>
             <div class="second-column">
                 <h2 class="title title-second">Faça Login</h2>
-                <form class="form">
+                <form id="formLogin" class="form">
                 
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" required>
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
+                        <input type="password" placeholder="Senha" required>
                     </label>
                     
-                    <a id="btnLogar" class="btn btn-second" href="./home.html" style="text-decoration: none;">Login</a>
+                    <a id="btnLogar" class="btn btn-second" style="text-decoration: none;">Login</a>
                 </form>
             </div><!-- second column -->
         </div><!-- second-content -->
     </div>
+    <div class="toaster" data-autohide="true">
+        <div class="toaster-header">
+          <strong class="mr-auto text-primary"></strong>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="script/styles.js"></script>
     <script src="script/login.js"></script>
 </body>
 </html>

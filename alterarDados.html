@@ -6,6 +6,7 @@
     <title>Landscape</title>
     <link rel="stylesheet" href="css/alterarDados.css">
     <link rel="icon" href="imagens/pincel.png">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 <body>
     <header>
@@ -28,12 +29,20 @@
 
         </div>
         <div class="content">               
-                    <label class="dados"> Nome: <input type="text"  value="Jean" ></label>        
-                    <label class="dados"> Email: <input type="email" value="joaozino@gmail.com" ></label>
-                    <label class="dados"> Senha: <input type="password"  value="12345678" ></label>
-                    <label id="url" class="dados">Url foto:<input  type="file" id="pesquisar"></input></label>            
+                    <label class="dados"> Nome: <input type="text"  value="Jean" required></label>        
+                    <label class="dados"> Email: <input type="email" value="joaozino@gmail.com" required></label>
+                    <label class="dados"> Senha: <input type="password"  value="12345678" required></label>
+                    <label id="url" class="dados">Url foto:<input  type="file" id="pesquisar" required></input></label>            
                     <button id="salvar">Salvar</button>
     </div>
     </div>
+    <div class="toaster" data-autohide="true">
+        <div class="toaster-header">
+          <strong class="mr-auto text-primary"></strong>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="script/styles.js"></script>
     <script src="script/alterarDados.js"></script>
 </body>

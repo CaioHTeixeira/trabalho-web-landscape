@@ -6,6 +6,7 @@
     <title>Landscape</title>
     <link rel="stylesheet" href="css/adicionarPost.css">
     <link rel="icon" href="imagens/pincel.png">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 <body>
     <header>
@@ -28,13 +29,13 @@
 
         </div>
         <div class="content">     
-            <label id="url" class="filtros">Selecionar Imagem:<input  type="file" id="pesquisar"></input></label>          
+            <label id="url" class="filtros">Selecionar Imagem:<input  type="file" id="pesquisar" required></input></label>          
             <section class="filtros">
-                <label>Nome da Obra:<input type="text" id="nome"></label>
+                <label>Nome da Obra:<input type="text" id="nome" required></label>
             </section>
             <section class="filtros">
                 <label  for="estilos">Estilos de arte:</label>
-                    <select id="Estilos">
+                    <select id="Estilos" required>
                     <option value=""selected></option>
                     <option value="renacentista">Renacentista</option>
                     <option value="barroca" >Barroca</option>
@@ -46,7 +47,7 @@
                 </section>
                 <section class="filtros">
                 <label  for="tipo">Tipo de arte:</label>
-                    <select id="Tipo">
+                    <select id="Tipo" required>
                     <option value=""selected></option>
                     <option value="pintura">Pintura</option>
                     <option value="desenho" >Desenho</option>
@@ -56,11 +57,19 @@
                     </select>
                 </section>
                 <section class="filtros">
-                    <label >Preço:<input type="text" value="R$00,00" id="preco"></label>
+                    <label >Preço:<input type="text" placeholder="R$ 00.00" id="preco" required></label>
                 </section>
                 <img src="imagens/oGrito.jpg" class="filtros" id="imgAdicionada">
                 <button class="filtros" id="salvar">Publicar</button>
         </div>
     </div>
+    <div class="toaster" data-autohide="true">
+        <div class="toaster-header">
+          <strong class="mr-auto text-primary"></strong>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="script/styles.js"></script>
     <script src="script/adicionarPost.js"></script>
 </body>

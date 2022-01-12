@@ -6,6 +6,7 @@
     <title>Landscape</title>
     <link rel="stylesheet" href="css/pagamentos.css">
     <link rel="icon" href="imagens/pincel.png">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 <body>
     <header>
@@ -40,39 +41,46 @@
               
               
               <h2>Pagamento</h2>
-              <div class="form">
+              <div id="formPagamento" class="form">
                 <div class="card space icon-relative">
                   <label class="label">Nome do cartão:</label>
-                  <input type="text" class="input">
+                  <input type="text" class="input" required>
                   <i class="fas fa-user"></i>
                 </div>
                 <div class="card space icon-relative">
                   <label class="label">Numero do cartão:</label>
-                  <input type="text" class="input" data-mask="0000 0000 0000 0000">
+                  <input type="text" class="input" data-mask="0000 0000 0000 0000" required>
                   <i class="far fa-credit-card"></i>
                 </div>
                 <div class="card-grp space">
                   <div class="card-item icon-relative">
                     <label class="label">Data expiração:</label>
-                    <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00">
+                    <input type="text" name="expiry-data" class="input" data-mask="00 / 00" placeholder="00 / 00" required>
                     <i class="far fa-calendar-alt"></i>
                   </div>
                   <div class="card-item icon-relative">
                     <label class="label">CVC:</label>
-                    <input type="text" class="input" data-mask="000" placeholder="000">
+                    <input type="text" class="input" data-mask="000" placeholder="000" required>
                     <i class="fas fa-lock"></i>
                   </div>
                 </div>
                 <div><label id="valorPagamento">Valor a pagar: R$ 100.000,00</label></div>  
                 <div class="btn-pagamento">
-                  Pagar
+                  <span>Pagar</span>
                 </div> 
                 
               </div>
             </div>
-          </div>
-          
         </div>
+    </div>
+    <div class="toaster" data-autohide="true">
+      <div class="toaster-header">
+        <strong class="mr-auto text-primary"></strong>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="script/styles.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="script/pagamentos.js"></script>
