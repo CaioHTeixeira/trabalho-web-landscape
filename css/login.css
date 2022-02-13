@@ -1,10 +1,33 @@
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--cor-da-letra);
 }
-@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');:root {
+    --cor-do-cabecalho: #a2aeaf;
+    --cor-do-fundo: #ecf0f1;
+    --cor-da-letra: black;
+    --cor-fundo-modulo:white;
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+
+        --cor-do-cabecalho: rgb(7, 0, 36);
+        --cor-do-fundo: #323333;
+        --cor-da-letra: white;
+        --cor-fundo-modulo:rgb(7, 0, 36);
+    }
+}
+
+
+
+
 body {
     font-family: 'Open Sans', sans-serif;    
     }
@@ -12,7 +35,8 @@ body {
 header{
     text-align: center;
     font-family: 'Moon Dance', cursive;
-    background-color: #a2aeaf;   
+    background-color: var(--cor-do-cabecalho);   
+    
 }
 
 #logo{
@@ -32,10 +56,10 @@ header{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ecf0f1;
+    background-color: var(--cor-do-fundo);
 }
 .content {
-    background-color: #fff;
+    background-color: var(--cor-fundo-modulo);
     border-radius: 15px;
     width: 960px;
     height: 50%;
@@ -137,6 +161,7 @@ header{
     border: none;
     background-color: #ecf0f1;
     padding: 5px;
+    color: black;
 }
 input:-webkit-autofill 
 {    
@@ -341,4 +366,5 @@ input:-webkit-autofill
         left: 0;
         width: 40%;
     }
+    
 }

@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+:root {
+    --cor-do-cabecalho: #a2aeaf;
+    --cor-do-fundo: #a2aeaf;
+    --cor-da-letra: black;
+    --cor-fundo-container:#ecf0f1;
+    --cor-da-divisoria:black;
+    
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+
+        --cor-do-cabecalho: rgb(7, 0, 36);
+        --cor-do-fundo: rgb(7, 0, 36);
+        --cor-da-letra: white;
+        --cor-fundo-container:#323333;
+        --cor-da-divisoria:white;
+    }
+}
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0px 0px 0px 0px;
@@ -11,17 +32,18 @@ body {
 header{
     text-align: center;
     font-family: 'Moon Dance', cursive;
-    background-color: #a2aeaf;
+    background-color: var(--cor-do-cabecalho);
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     gap: 2em;
-    border-bottom: 2px solid black;     
+    border-bottom: 2px solid var(--cor-da-divisoria);     
 }
 
 #busca{
     align-self: flex-end;
     margin-bottom: 10px;
+    color: var(--cor-da-letra);
 }
 
 #lupa{
@@ -45,10 +67,11 @@ header{
     position: relative;
     left: -95px;
     cursor: pointer;
+    color: var(--cor-da-letra);
 }
 
 #perfilCabecalho{
-    border: 1px solid rgb(41, 40, 40);
+    border: 1px solid var(--cor-da-divisoria);
     min-width: 38px;
     height: 38px;
     margin: 2px;
@@ -67,6 +90,7 @@ header{
     grid-template-columns: 300px auto;
     background-color: #ecf0f1;
     overflow-y:auto;
+    background-color: var(--cor-fundo-container);
 
 }
 
@@ -76,8 +100,9 @@ header{
     flex-direction: column;
     gap: 1em;
     justify-content: flex-start;
-    background-color: #a2aeaf;
-    border-right: 2px solid black;
+    background-color: var(--cor-do-fundo);
+    border-right: 2px solid var(--cor-da-divisoria);
+    color: var(--cor-da-letra);
 }
 
 #perfil{
@@ -96,7 +121,7 @@ header{
 .menu{
     min-width: 298px;
     height: 50px;    
-    border: 1px solid rgb(51, 50, 50);
+    border: 1px solid var(--cor-da-divisoria);
     text-align: center;
 }
 
@@ -122,6 +147,7 @@ header{
 
 #meusPosts, #adicionarPost, #historicoTransacoes, #alterarDados {
     cursor: pointer;
+    
 }
 
 .content {

@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+:root {
+  --cor-do-cabecalho: #a2aeaf;
+  --cor-do-fundo: #a2aeaf;
+  --cor-da-letra: black;
+  --cor-fundo-container:#ecf0f1;
+  --cor-da-divisoria:black;
+  --cor-fundo-pag:#f8f8f8;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+      --cor-do-cabecalho: rgb(7, 0, 36);
+      --cor-do-fundo: rgb(7, 0, 36);
+      --cor-da-letra: white;
+      --cor-fundo-container:#323333;
+      --cor-da-divisoria:white;
+      --cor-fundo-pag:gray;
+  }
+}
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -11,19 +33,20 @@ body {
 }
 
 header{
-    text-align: center;
-    font-family: 'Moon Dance', cursive;
-    background-color: #a2aeaf;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    gap: 2em;
-    border-bottom: 2px solid black;     
+  text-align: center;
+  font-family: 'Moon Dance', cursive;
+  background-color: var(--cor-do-cabecalho);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  border-bottom: 2px solid var(--cor-da-divisoria);     
 }
 
 #busca{
     align-self: flex-end;
     margin-bottom: 10px;
+    color: var(--cor-da-letra);
 }
 
 #lupa{
@@ -37,20 +60,21 @@ header{
 }
 
 #logo{
-    margin: 0;
-    padding: 0;
-    font-size: 28px;
-    max-width: 300px;
-    height: 40px;
-    font-weight: bold;
-    flex: 1;
-    position: relative;
-    left: -95px;
-    cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  max-width: 300px;
+  height: 40px;
+  font-weight: bold;
+  flex: 1;
+  position: relative;
+  left: -95px;
+  cursor: pointer;
+  color: var(--cor-da-letra);
 }
 
 #perfilCabecalho{
-    border: 1px solid rgb(41, 40, 40);
+    border: 1px solid var(--cor-da-divisoria);
     min-width: 38px;
     height: 38px;
     margin: 2px;
@@ -68,7 +92,7 @@ header{
     gap: 10em;
     justify-content: center;
     align-items: center;
-    background-color: #ecf0f1;
+    background-color: var(--cor-fundo-container);
 }
 
 .post {
@@ -206,7 +230,7 @@ html, body, .container {
 
 
 .payment{
-  background: #f8f8f8;
+  background: var(--cor-fundo-pag);
   max-width: 360px;
   margin: 80px auto;
   height: auto;
@@ -245,7 +269,7 @@ html, body, .container {
   word-spacing: 3px;
   outline: none;
   font-size: 16px;
-  color: #555555;
+  color: var(--cor-da-letra);
 }
 
 .card-grp{
