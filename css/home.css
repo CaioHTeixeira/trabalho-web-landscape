@@ -4,7 +4,7 @@
     --cor-do-fundo: #a2aeaf;
     --cor-da-letra: black;
     --cor-fundo-container:#ecf0f1;
-    --cor-da-divisoria:black;
+    --cor-da-divisoria:grey;
     
   }
   
@@ -106,7 +106,7 @@ header{
 .sidebar > label{
     font-size: 30px;
     position: relative;
-    right: -85px;
+    right: -15px;
     margin-top: 20px;
     color: var(--cor-da-letra);
 
