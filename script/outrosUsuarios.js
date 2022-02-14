@@ -60,6 +60,7 @@ $(function() {
                 <label id="comentario">${comentario}</label>
             </article>`
             userCounter++;
+            event.target.previousSibling.value = ' '
         })
     })
 
@@ -75,6 +76,7 @@ $(function() {
                     <label id="comentario">${item.value}</label>
                 </article>`
                 userCounter++;
+                event.target.value = ' '
             }
         })
     })

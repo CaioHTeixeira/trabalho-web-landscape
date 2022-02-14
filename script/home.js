@@ -51,7 +51,7 @@ $(function() {
     Array.from(btnsComentar).forEach(item => {
         item.addEventListener('click', event => {
             const comentariosSection = event.target.parentNode.parentNode.nextElementSibling;
-            const comentario = event.target.previousSibling.value;
+            let comentario = event.target.previousSibling.value;
             
             comentariosSection.innerHTML += `
             <article>
@@ -60,6 +60,7 @@ $(function() {
                 <label id="comentario">${comentario}</label>
             </article>`
             userCounter++;
+            event.target.previousSibling.value = ' '
         })
     })
 
@@ -75,6 +76,7 @@ $(function() {
                     <label id="comentario">${item.value}</label>
                 </article>`
                 userCounter++;
+                event.target.value = ' '
             }
         })
     })
