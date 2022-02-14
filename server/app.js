@@ -8,13 +8,13 @@ const app = express()
 app.use(express.static('client'))
 // http://localhost:3000/login.html
 
-app.get('/', (req, res) => res.send('Hello world'));
+app.get('/hello', (req, res) => res.send('Hello world'));
 app.listen(PORT, () => {
     console.log(`Estou ouvindo na porta ${PORT}`);
   })
 
-  async function teste () {
-    const pessoas = await db.selectPessoa();
-    console.log(pessoas)
-  }
-  teste()
+//   async function teste () {
+//     const pessoas = await db.selectPessoa();
+//     console.log(pessoas)
+//   }
+//   teste()
